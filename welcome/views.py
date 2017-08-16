@@ -15,6 +15,7 @@ def index(request):
     return render(request, 'welcome/index.html', {
         'hostname': hostname,
         'database': database.info(),
+        'author' : "MFF"
         'count': PageView.objects.count()
     })
 
